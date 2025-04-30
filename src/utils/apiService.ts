@@ -2,7 +2,7 @@ import { MessageType } from '../types';
 
 // Base OpenAI API configuration
 const baseURL = "https://api.aimlapi.com/v1";
-const apiKey = "7ac9cf9140d94385b7b081a9811cdc04";
+const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
 
 export const generateAiResponse = async (
   messageType: MessageType,
